@@ -13,4 +13,18 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+
+//= require respond.min
+//= require modernizr.custom.17475
+//= require jquery.flexslider
+//= require hoverIntent
+//= require superfish
+//= require mobile-menu
+//= require placeholder
+//= require inview
+//= require bootstrap
+//= require validate
+//= require functions
+//= require fancybox/source/jquery.fancybox.pack
+//= require fancybox/source/helpers/jquery.fancybox-media
+//= require fancy_func
