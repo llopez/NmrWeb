@@ -17,7 +17,7 @@ CSS STRUCTURE:
 /* 1.  SITE STRUCTURE and TYPOGRAPHY */
 /*============================================================================================*/
 body {
-	background:#e7e7e7 url(../assets/bg.png) repeat-y center top;
+	background:#e7e7e7 asset-url('bg.png') repeat-y center top;
 	font:13px/22px 'Open Sans', Arial, sans-serif;
 	color: #666;
 	-webkit-font-smoothing: antialiased !important;
@@ -66,7 +66,7 @@ h3.title {
 	font-size:32px;
 	font-weight:800;
 	text-align:center;
-	background:url(../assets/divider.png) no-repeat center top;
+	background: asset-url('divider.png') no-repeat center top;
 	text-align:center;
 	color:#555;
 	padding: 40px 0;
@@ -230,7 +230,7 @@ header {
 
 h1#logo a{
 	text-indent:-99999px;
-	background: url(../assets/logo.png) no-repeat 0 0;
+	background: asset-url('logo.png') no-repeat 0 0;
 	display:block;
 	height:35px;
 	width:240px;
@@ -259,10 +259,10 @@ footer .form-bg-1, footer .form-bg-2 {
 /* 2.  PAGES AND CONTENT */
 /*============================================================================================*/
 /** Profile **/
-#why-bg-1 {background:url(../assets/why-1.png) no-repeat left top; height:395px;}
-#why-bg-2 {background:url(../assets/why-2.png) no-repeat right top; height:395px;}
-#why-bg-3 {background:url(../assets/why-3.png) no-repeat left top; height:395px;}
-#why-bg-4 {background:url(../assets/why-4.png) no-repeat right top; height:395px;}
+#why-bg-1 {background:asset-url('why-1.png') no-repeat left top; height:395px;}
+#why-bg-2 {background:asset-url('why-2.png') no-repeat right top; height:395px;}
+#why-bg-3 {background:asset-url('why-3.png') no-repeat left top; height:395px;}
+#why-bg-4 {background:asset-url('why-4.png') no-repeat right top; height:395px;}
 .why-desc { padding-top:113px;}
 
 /** Calculators **/
@@ -340,7 +340,7 @@ footer .form-bg-1, footer .form-bg-2 {
 	margin:5px 14px 10px 0;
 	height:33px;
 	line-height:33px;
-	background: #8abbcc url(../assets/tag_bg.png) no-repeat 91% center;
+	background: #8abbcc asset-url('tag_bg.png') no-repeat 91% center;
 	padding:0 28px 0 11px;
 	color:#fff;
 
@@ -512,11 +512,11 @@ input[type="checkbox"]+label span {
     height:19px;
     margin:-1px 4px 0 0;
     vertical-align:middle;
-    background:url(../assets/check_radio_sheet.png) left top no-repeat;
+    background:asset-url('check_radio_sheet.png') left top no-repeat;
     cursor:pointer;
 }
 input[type="checkbox"]:checked + label span {
-    background:url(../assets/check_radio_sheet.png) -19px top no-repeat;
+    background:asset-url('check_radio_sheet.png') -19px top no-repeat;
 }
 input[type="radio"] {
     display:none;
@@ -527,11 +527,11 @@ input[type="radio"] + label span {
     height:19px;
     margin:-1px 4px 0 0;
     vertical-align:middle;
-    background:url(../assets/check_radio_sheet.png) -38px top no-repeat;
+    background:asset-url('check_radio_sheet.png') -38px top no-repeat;
     cursor:pointer;
 }
 input[type="radio"]:checked + label span {
-    background:url(../assets/check_radio_sheet.png) -57px top no-repeat;
+    background:asset-url('check_radio_sheet.png') -57px top no-repeat;
 }
 
 label {
@@ -623,7 +623,7 @@ input.form-control:focus, select.form-control:focus, textarea.form-control:focus
    width: 98%;
    height: 34px;
    overflow: hidden;
-   background: url(../assets/down_arrow_select.png) no-repeat right ;
+   background: asset-url('down_arrow_select.png') no-repeat right ;
    }
    .styled-select-2 select {
    background: transparent;
@@ -643,7 +643,7 @@ input.form-control:focus, select.form-control:focus, textarea.form-control:focus
    width: 98%;
    height: 34px;
    overflow: hidden;
-   background: url(../assets/down_arrow_select_2.png) no-repeat right ;
+   background: asset-url('down_arrow_select_2.png') no-repeat right ;
    }
 /*============================================================================================*/
 /* 4.  COMMON */
@@ -653,10 +653,10 @@ input.form-control:focus, select.form-control:focus, textarea.form-control:focus
 select#mobileMenu_main-nav  { float:right; margin-top:4px;}
 
 /* Page head*/
-#sub-head { text-align:center; height:340px; background: #8dc63f url(../assets/bg-sub-head.png) no-repeat center top; color:#fff; display: table;  position: relative; overflow: hidden; width:100%; padding: 20px; margin-bottom:30px; }
+#sub-head { text-align:center; height:340px; background: #8dc63f asset-url('bg-sub-head.png') no-repeat center top; color:#fff; display: table;  position: relative; overflow: hidden; width:100%; padding: 20px; margin-bottom:30px; }
 #sub-head div {display: table-cell; vertical-align:middle; }
 #sub-head div p { margin-bottom:0; padding-bottom:0;}
-.break { display:block; background:url(../assets/break-content.png) no-repeat center left; height:20px; margin-bottom:30px;}
+.break { display:block; background:asset-url('break-content.png') no-repeat center left; height:20px; margin-bottom:30px;}
 .lead strong {color:#444; font-weight:normal;}
 
 .assets-circle.style { background-color:#fff;
@@ -710,7 +710,7 @@ iframe{
  }
 
 #newsletter_container {
-	background: #7accc8 url(../assets/bg-sub-head.png) no-repeat;
+	background: #7accc8 asset-url('bg-sub-head.png') no-repeat;
 	padding: 20px 20px 10px 20px;
  }
  #newsletter_container  input.form-control,  #newsletter_container  input:focus.form-control{
@@ -893,7 +893,7 @@ transition: all 0.2s ease;
 .infomsg { background-color: #DEEEFA;border: 1px solid #AFD3F2; }
 .infomsg i { color: #AFD3F2; }
 .infomsg2 { background-color: #FFFFFF; border: 1px solid #AFD3F2; }
-a.clostalert { background: url("../assets/messages.png") no-repeat scroll 0 -310px transparent; cursor: pointer; height: 15px; overflow: hidden; position: absolute; right: 5px; text-indent: 9999px; top: 5px; width: 15px; }
+a.clostalert { background: asset-url("messages.png") no-repeat scroll 0 -310px transparent; cursor: pointer; height: 15px; overflow: hidden; position: absolute; right: 5px; text-indent: 9999px; top: 5px; width: 15px; }
 
 /* tabs */
 .nav > li > a:hover,
@@ -1395,7 +1395,7 @@ header, footer {max-width:100%;}
 }
 .why-desc { padding-top:0;}
 h1#logo a{
-	background: url(../assets/logo-mobile.png) no-repeat 0 0;
+	background: asset-url('logo-mobile.png') no-repeat 0 0;
 	width:auto;
 }
 #map {
