@@ -15,6 +15,7 @@
  *= require menu
  *= require font-awesome
  *= require socialize-bookmarks
+ *= require jquery.fancybox
  *= require animate
  *= require flexslider
 

@@ -1,0 +1,39 @@
+!!!
+/[if IE 7 ] <html class="ie ie7" lang="en">
+/[if IE 8 ] <html class="ie ie8" lang="en">
+/[if IE 9 ] <html class="ie ie9" lang="en">
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title NmrWeb
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => false
+    = csrf_meta_tags
+    / Basic Page Needs
+    %meta{:charset => "utf-8"}/
+    %title PLANAR | Personal trainer site template
+    %meta{:content => "Only 16$ - PLANAR Personal trainer site template with calories calculators", :name => "description"}/
+    %meta{:content => "Ansonika", :name => "author"}/
+    / Favicons
+    %link{:href => "favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
+    %link{:href => "assets/apple-touch-icon-57x57-precomposed.png", :rel => "apple-touch-icon", :type => "image/x-icon"}/
+    %link{:href => "assets/apple-touch-icon-72x72-precomposed.png", :rel => "apple-touch-icon", :sizes => "72x72", :type => "image/x-icon"}/
+    %link{:href => "assets/apple-touch-icon-114x114-precomposed.png", :rel => "apple-touch-icon", :sizes => "114x114", :type => "image/x-icon"}/
+    %link{:href => "assets/apple-touch-icon-144x144-precomposed.png", :rel => "apple-touch-icon", :sizes => "144x144", :type => "image/x-icon"}/
+    / Mobile Specific Metas
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300", :rel => "stylesheet", :type => "text/css"}/
+    /[if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    /[if IE 7]
+      <link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+  %body
+    = yield
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    :javascript
+      /* <![CDATA[ */
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+          animation: "fade"
+        });
+      });
+      /* ]]> */
