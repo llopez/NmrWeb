@@ -1,206 +1,105 @@
-%header
-  .container
-    .row
-      .col-md-4.col-xs-3
-        %h1#logo
-          %a{:href => "index.html", :title => "Planar - Personal Trainer"} Planar - Personal Trainer
-      %nav.col-md-8.col-xs-9
-        %ul#main-nav.sf-menu
-          %li
-            %a{:href => "profile.html"} Profile
-          %li
-            %a{:href => "#"} Training
-            %ul
-              %li
-                %a{:href => "services.html"} Services
-              %li
-                %a{:href => "training-programs.html"} Programs
-          %li
-            %a{:href => "#"} Calorie calculators
-            %ul
-              %li
-                %a{:href => "daily-calorie-calculator.html"} Daily calories
-              %li
-                %a{:href => "calories-burned-heart-rate.html"} Calories burned by heart rate
-              %li
-                %a{:href => "calories-burned-calculator.html"} Calories burned by activites
-              %li
-                %a{:href => "bmi-calculator.html"} BMI calculator
-          %li
-            %a{:href => "#"} Pages
-            %ul
-              %li
-                %a{:href => "pricing.html"} Pricing
-              %li
-                %a{:href => "blog.html"} Blog
-              %li
-                %a{:href => "blog_post.html"} Single post
-              %li
-                %a{:href => "elements.html"} Elements
-              %li
-                %a{:href => "img-galleries.html"} Images and galleries
-              %li
-                %a{:href => "media.html"} Media
-          %li
-            %a{:href => "contact.html"} Contact
-          %li
-            %a{:href => "#"} Purchase
-      / End Nav
-  / End container
-/ End header
-.container
-  .row
-    .col-md-12
-      .flexslider
-        %ul.slides
-          %li
-            %img{:alt => "", :src => asset_path("slider/slide-1.jpg")}/
-            %p.flex-caption I will help you to achieve your goal
-          %li
-            %img{:alt => "", :src => asset_path("slider/slide-2.jpg")}/
-            %p.flex-caption Your exercises will be carried out to perfection
-          %li
-            %img{:alt => "", :src => asset_path("slider/slide-3.jpg")}/
-            %p.flex-caption Lose weht in a short time
-          %li
-            %img{:alt => "", :src => asset_path("slider/slide-4.jpg")}/
-            %p.flex-caption The pleasure of outdoor recreation
-          %li
-            %img{:alt => "", :src => asset_path("slider/slide-5.jpg")}/
-            %p.flex-caption Proper training will make you feel better
-      / End slider
-    / End row
-  / End col-md-12
-  .row
-    .col-md-3.col-sm-6
-      .box_calculator
-        %a{:href => "daily-calorie-calculator.html"}
-          %img{:alt => "", :src => asset_path("icon-1.png")}/
-          %h3 Daily Calorie Calculator
-          %p Determine your daily calorie needs in a more precise way
-      / End box-calculator
-    / End col-md-3
-    .col-md-3.col-sm-6
-      .box_calculator
-        %a{:href => "calories-burned-heart-rate.html"}
-          %img{:alt => "", :src => asset_path("icon-2.png")}/
-          %h3 Calorie Burned by heart/rate
-          %p The connection between the heart rate and the metabolism
-      / End box-calculator
-    / End col-md-3
-    .col-md-3.col-sm-6
-      .box_calculator
-        %a{:href => "calories-burned-calculator.html"}
-          %img{:alt => "", :src => asset_path("icon-3.png")}/
-          %h3 Calorie Burned by activities
-          %p Estimate the number of calories burned after exercises
-      / End box-calculator
-    / End col-md-3
-    .col-md-3.col-sm-6
-      .box_calculator
-        %a{:href => "bmi-calculator.html"}
-          %img{:alt => "", :src => asset_path("icon-4.png")}/
-          %h3 Bmi Body mass Calculator
-          %p Measure of body fat based on heht and weight
-      / End box-calculator
-    / End col-md-3
+.row
+  .col-md-12
+    .flexslider
+      %ul.slides
+        %li
+          %img{:alt => "", :src => asset_path("slider/slide-1.jpg")}/
+          %p.flex-caption I will help you to achieve your goal
+        %li
+          %img{:alt => "", :src => asset_path("slider/slide-2.jpg")}/
+          %p.flex-caption Your exercises will be carried out to perfection
+        %li
+          %img{:alt => "", :src => asset_path("slider/slide-3.jpg")}/
+          %p.flex-caption Lose weht in a short time
+        %li
+          %img{:alt => "", :src => asset_path("slider/slide-4.jpg")}/
+          %p.flex-caption The pleasure of outdoor recreation
+        %li
+          %img{:alt => "", :src => asset_path("slider/slide-5.jpg")}/
+          %p.flex-caption Proper training will make you feel better
+    / End slider
   / End row
-  %h3.title Some words about me
-  .row
-    .col-md-6
-      %h3.title-2
-        %span Hello
-        \/ My experience
+/ End col-md-12
+.row
+  .col-md-3.col-sm-6
+    .box_calculator
+      %a{:href => "daily-calorie-calculator.html"}
+        %img{:alt => "", :src => asset_path("icon-1.png")}/
+        %h3 Daily Calorie Calculator
+        %p Determine your daily calorie needs in a more precise way
+    / End box-calculator
+  / End col-md-3
+  .col-md-3.col-sm-6
+    .box_calculator
+      %a{:href => "calories-burned-heart-rate.html"}
+        %img{:alt => "", :src => asset_path("icon-2.png")}/
+        %h3 Calorie Burned by heart/rate
+        %p The connection between the heart rate and the metabolism
+    / End box-calculator
+  / End col-md-3
+  .col-md-3.col-sm-6
+    .box_calculator
+      %a{:href => "calories-burned-calculator.html"}
+        %img{:alt => "", :src => asset_path("icon-3.png")}/
+        %h3 Calorie Burned by activities
+        %p Estimate the number of calories burned after exercises
+    / End box-calculator
+  / End col-md-3
+  .col-md-3.col-sm-6
+    .box_calculator
+      %a{:href => "bmi-calculator.html"}
+        %img{:alt => "", :src => asset_path("icon-4.png")}/
+        %h3 Bmi Body mass Calculator
+        %p Measure of body fat based on heht and weight
+    / End box-calculator
+  / End col-md-3
+/ End row
+%h3.title Some words about me
+.row
+  .col-md-6
+    %h3.title-2
+      %span Hello
+      \/ My experience
+    %p
+      Qui at commune sniferumque. In mel labores moderatius, tantas saperet facilisi quo ut. Vero wisi civibus ea vim. An tota nostro sit, mel ei utinam ancillae, mutat dolores mea et. Homero iriure imperdiet eu mel. Ei enim viderer pri. Sed in eros nobis, te cum invidunt probatus. Mel an aeque efficiendi. Te populo ocurreret reprehendunt usu, sit at purto iudicabit.
+    %p
+      Qui at commune sniferumque. In mel labores moderatius, tantas saperet facilisi quo ut. Vero wisi civibus ea vim. An tota nostro sit, mel ei utinam ancillae, mutat dolores mea et. Homero iriure imperdiet eu mel. Ei enim viderer pri. Sed in eros nobis, te cum invidunt probatus. Mel an aeque efficiendi. Te populo ocurreret reprehendunt usu, sit at purto iudicabit.
+    %p
+      %a.button_small{:href => "#"} Read more
+  .col-md-6
+    %h3.title-2
+      %span Mission
+      \/ Love training
+    %p
+      Qui at commune sniferumque. In mel labores moderatius, tantas saperet facilisi quo ut. Vero wisi civibus ea vim. An tota nostro sit, mel ei utinam ancillae, mutat dolores mea et. Homero iriure imperdiet eu mel. Ei enim viderer pri. Sed in eros nobis, te cum invidunt probatus. Mel an aeque efficiendi. Te populo ocurreret reprehendunt usu, sit at purto iudicabit.
+    %p
+      Qui at commune sniferumque. In mel labores moderatius, tantas saperet facilisi quo ut. Vero wisi civibus ea vim. An tota nostro sit, mel ei utinam ancillae, mutat dolores mea et. Homero iriure imperdiet eu mel. Ei enim viderer pri. Sed in eros nobis, te cum invidunt probatus. Mel an aeque efficiendi. Te populo ocurreret reprehendunt usu, sit at purto iudicabit.
+    %p
+      %a.button_small{:href => "#"} Read more
+/ End row
+%h3.title Satisfied trainers
+.row
+  .col-md-6
+    .quote.clearfix
+      %img.img-circle{:alt => "", :src => asset_path("testimonial-1.jpg")}/
       %p
-        Qui at commune sniferumque. In mel labores moderatius, tantas saperet facilisi quo ut. Vero wisi civibus ea vim. An tota nostro sit, mel ei utinam ancillae, mutat dolores mea et. Homero iriure imperdiet eu mel. Ei enim viderer pri. Sed in eros nobis, te cum invidunt probatus. Mel an aeque efficiendi. Te populo ocurreret reprehendunt usu, sit at purto iudicabit.
+        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.
+      %em Jhon Doe
+  .col-md-6
+    .quote.clearfix
+      %img.img-circle{:alt => "", :src => asset_path("testimonial-2.jpg")}/
       %p
-        Qui at commune sniferumque. In mel labores moderatius, tantas saperet facilisi quo ut. Vero wisi civibus ea vim. An tota nostro sit, mel ei utinam ancillae, mutat dolores mea et. Homero iriure imperdiet eu mel. Ei enim viderer pri. Sed in eros nobis, te cum invidunt probatus. Mel an aeque efficiendi. Te populo ocurreret reprehendunt usu, sit at purto iudicabit.
+        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.
+      %em Jhon Doe
+  .col-md-6
+    .quote.clearfix
+      %img.img-circle{:alt => "", :src => asset_path("testimonial-3.jpg")}/
       %p
-        %a.button_small{:href => "#"} Read more
-    .col-md-6
-      %h3.title-2
-        %span Mission
-        \/ Love training
+        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.
+      %em Jhon Doe
+  .col-md-6.clearfix
+    .quote
+      %img.img-circle{:alt => "", :src => asset_path("testimonial-4.jpg")}/
       %p
-        Qui at commune sniferumque. In mel labores moderatius, tantas saperet facilisi quo ut. Vero wisi civibus ea vim. An tota nostro sit, mel ei utinam ancillae, mutat dolores mea et. Homero iriure imperdiet eu mel. Ei enim viderer pri. Sed in eros nobis, te cum invidunt probatus. Mel an aeque efficiendi. Te populo ocurreret reprehendunt usu, sit at purto iudicabit.
-      %p
-        Qui at commune sniferumque. In mel labores moderatius, tantas saperet facilisi quo ut. Vero wisi civibus ea vim. An tota nostro sit, mel ei utinam ancillae, mutat dolores mea et. Homero iriure imperdiet eu mel. Ei enim viderer pri. Sed in eros nobis, te cum invidunt probatus. Mel an aeque efficiendi. Te populo ocurreret reprehendunt usu, sit at purto iudicabit.
-      %p
-        %a.button_small{:href => "#"} Read more
-  / End row
-  %h3.title Satisfied trainers
-  .row
-    .col-md-6
-      .quote.clearfix
-        %img.img-circle{:alt => "", :src => asset_path("testimonial-1.jpg")}/
-        %p
-          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.
-        %em Jhon Doe
-    .col-md-6
-      .quote.clearfix
-        %img.img-circle{:alt => "", :src => asset_path("testimonial-2.jpg")}/
-        %p
-          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.
-        %em Jhon Doe
-    .col-md-6
-      .quote.clearfix
-        %img.img-circle{:alt => "", :src => asset_path("testimonial-3.jpg")}/
-        %p
-          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.
-        %em Jhon Doe
-    .col-md-6.clearfix
-      .quote
-        %img.img-circle{:alt => "", :src => asset_path("testimonial-4.jpg")}/
-        %p
-          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.
-        %em Jhon Doe
-  / End row
-/ End container
-%footer
-  .container
-    .row
-      .col-md-6
-        %h5 Contacts
-        %p
-          Our mission is to bring affordable Technology education to people everywhere, in order to help them achieve their dreams and change the world. to bring affordable Technology education to people everywhere, in order to help them achieve their dreams and change the world.
-        %ul
-          %li
-            %i.icon-user
-            Personal trainer Name
-          %li
-            %i.icon-phone
-            Telephone: 41.22.319.36.10
-          %li
-            %i.icon-envelope
-            Email:
-            %a{:href => "#"} info@planar.com
-          %li
-            %i.icon-skype
-            Skype name: Planar
-        %ul.social-bookmarks.clearfix
-          %li.linkedin
-            %a{:href => "#"} behance
-          %li.facebook
-            %a{:href => "#"} facebook
-          %li.googleplus
-            %a{:href => "#"} googleplus
-          %li.twitter
-            %a{:href => "#"} twitter
-      .col-md-6
-        %h5.add_bottom_15 Suggest this site to a friend
-        #message-friend
-        %form#contactfriend{:action => "assets/send_to_friend.php", :method => "post"}
-          .form-bg-1
-            %input#name_footer.form-control{:placeholder => "Your name*", :type => "text"}/
-          .form-bg-2
-            %input#friendname_footer.form-control{:placeholder => "Your friend name*", :type => "text"}/
-          .form-bg-1
-            %input#friendemail_footer.form-control{:placeholder => "Your friend email*", :type => "email"}/
-          .form-bg-2
-            %textarea#message_footer.form-control{:placeholder => "Message*", :rows => "3"}
-          .form-bg-1
-            %input#verify_footer.form-control{:placeholder => "Are you human? 3 + 1 =", :type => "text"}/
-          %input#submit-friend.button_medium.add_top_30{:type => "submit", :value => "Submit"}/
-  #copy © 2013 - All Rhts Reserved
-/ End footer
-#toTop Back to Top
+        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.
+      %em Jhon Doe

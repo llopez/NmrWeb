@@ -28,3 +28,5 @@
 //= require fancybox/source/jquery.fancybox.pack
 //= require fancybox/source/helpers/jquery.fancybox-media
 //= require fancy_func
+//= require mapmarker.jquery
+//= require mapmarker_func.jquery

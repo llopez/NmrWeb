@@ -27,8 +27,92 @@
     /[if IE 7]
       <link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
   %body
-    = yield
+    %header
+      .container
+        .row
+          .col-md-4.col-xs-3
+            %h1#logo
+              %a{:href => "/", :title => "Planar - Personal Trainer"} Planar - Personal Trainer
+          %nav.col-md-8.col-xs-9
+            %ul#main-nav.sf-menu
+              %li
+                %a{:href => "profile.html"} Profile
+              %li
+                %a{:href => "#"} Training
+                %ul
+                  %li
+                    %a{:href => "services.html"} Services
+                  %li
+                    %a{:href => "training-programs.html"} Programs
+              %li
+                %a{:href => "#"} Calorie calculators
+                %ul
+                  %li
+                    %a{:href => "daily-calorie-calculator.html"} Daily calories
+                  %li
+                    %a{:href => "calories-burned-heart-rate.html"} Calories burned by heart rate
+                  %li
+                    %a{:href => "calories-burned-calculator.html"} Calories burned by activites
+                  %li
+                    %a{:href => "bmi-calculator.html"} BMI calculator
+              %li
+                %a{:href => "#"} Pages
+                %ul
+                  %li
+                    %a{:href => "pricing.html"} Pricing
+                  %li
+                    %a{:href => "blog.html"} Blog
+                  %li
+                    %a{:href => "blog_post.html"} Single post
+                  %li
+                    %a{:href => "elements.html"} Elements
+                  %li
+                    %a{:href => "img-galleries.html"} Images and galleries
+                  %li
+                    %a{:href => "media.html"} Media
+              %li
+                %a{:href => "/contact"} Contact
+              %li
+                %a{:href => "#"} Purchase
+    .container
+      = yield
+    %footer
+      .container
+        .row
+          .col-md-6
+            %h5 Contacts
+            %p
+              Our mission is to bring affordable Technology education to people everywhere, in order to help them achieve their dreams and change the world. to bring affordable Technology education to people everywhere, in order to help them achieve their dreams and change the world.
+            %ul
+              %li
+                %i.icon-user
+                Personal trainer Name
+              %li
+                %i.icon-phone
+                Telephone: 41.22.319.36.10
+              %li
+                %i.icon-envelope
+                Email:
+                %a{:href => "#"} info@planar.com
+              %li
+                %i.icon-skype
+                Skype name: Planar
+            %ul.social-bookmarks.clearfix
+              %li.linkedin
+                %a{:href => "#"} behance
+              %li.facebook
+                %a{:href => "#"} facebook
+              %li.googleplus
+                %a{:href => "#"} googleplus
+              %li.twitter
+                %a{:href => "#"} twitter
+          .col-md-6
+      #copy © 2013 - All Rhts Reserved
+    / End footer
+    #toTop Back to Top
+
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    %script{:src => "http://maps.googleapis.com/maps/api/js?sensor=false", :type => "text/javascript"}
     :javascript
       /* <![CDATA[ */
       $(window).load(function() {
