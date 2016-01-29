@@ -10,9 +10,9 @@
     = csrf_meta_tags
     / Basic Page Needs
     %meta{:charset => "utf-8"}/
-    %title PLANAR | Personal trainer site template
-    %meta{:content => "Only 16$ - PLANAR Personal trainer site template with calories calculators", :name => "description"}/
-    %meta{:content => "Ansonika", :name => "author"}/
+    %title NMR | Escuela de Roller
+    %meta{:content => "Nmr - Escuela de Roller", :name => "description"}/
+    %meta{:content => "Luis Lopez", :name => "author"}/
     / Favicons
     %link{:href => asset_path("favicon.ico"), :rel => "shortcut icon", :type => "image/x-icon"}/
     %link{:href => asset_path("apple-touch-icon-57x57-precomposed.png"), :rel => "apple-touch-icon", :type => "image/x-icon"}/
@@ -31,77 +31,57 @@
       .container
         .row
           .col-md-4.col-xs-3
+          /
             %h1#logo
-              %a{:href => "/", :title => "Planar - Personal Trainer"} Planar - Personal Trainer
+              %a{:href => "/", :title => "NMR - Escuela de Roller"} NMR - Escuela de Roller
           %nav.col-md-8.col-xs-9
             %ul#main-nav.sf-menu
               %li
-                %a{:href => "profile.html"} Profile
+                %a{:href => "/"} Inicio
               %li
-                %a{:href => "#"} Training
+                %a{:href => "#"} Disciplinas
                 %ul
                   %li
-                    %a{:href => "services.html"} Services
+                    %a{:href => "/"} Fitness
                   %li
-                    %a{:href => "training-programs.html"} Programs
+                    %a{:href => "/"} Slalom
+                  %li
+                    %a{:href => "/"} FreeSkate
+                  %li
+                    %a{:href => "/"} Velocidad
               %li
-                %a{:href => "#"} Calorie calculators
+                %a{:href => "#"} Clases
                 %ul
                   %li
-                    %a{:href => "daily-calorie-calculator.html"} Daily calories
+                    %a{:href => "/"} Grupal
                   %li
-                    %a{:href => "calories-burned-heart-rate.html"} Calories burned by heart rate
+                    %a{:href => "/"} Individual
                   %li
-                    %a{:href => "calories-burned-calculator.html"} Calories burned by activites
-                  %li
-                    %a{:href => "bmi-calculator.html"} BMI calculator
+                    %a{:href => "/"} Mini Grupal
               %li
-                %a{:href => "#"} Pages
-                %ul
-                  %li
-                    %a{:href => "pricing.html"} Pricing
-                  %li
-                    %a{:href => "blog.html"} Blog
-                  %li
-                    %a{:href => "blog_post.html"} Single post
-                  %li
-                    %a{:href => "elements.html"} Elements
-                  %li
-                    %a{:href => "img-galleries.html"} Images and galleries
-                  %li
-                    %a{:href => "media.html"} Media
-              %li
-                %a{:href => "/contact"} Contact
-              %li
-                %a{:href => "#"} Purchase
+                %a{:href => "/contact"} Contacto
     .container
       = yield
     %footer
       .container
         .row
           .col-md-6
-            %h5 Contacts
+            %h5 Contacto
             %p
-              Our mission is to bring affordable Technology education to people everywhere, in order to help them achieve their dreams and change the world. to bring affordable Technology education to people everywhere, in order to help them achieve their dreams and change the world.
+              Puedes contactarnos por varios medios, email, facebook, telefono o precensial en cualquier de los puntos donde se dictan las clases.
             %ul
               %li
                 %i.icon-user
-                Personal trainer Name
+                Nicolas Sapia Pinto
               %li
                 %i.icon-phone
-                Telephone: 41.22.319.36.10
+                11-3621-0500
               %li
                 %i.icon-envelope
-                Email:
-                %a{:href => "#"} info@planar.com
-              %li
-                %i.icon-skype
-                Skype name: Planar
+                %a{:href => "mailto:nmroller@hotmail.com"} nmroller@hotmail.com
             %ul.social-bookmarks.clearfix
-              %li.linkedin
-                %a{:href => "#"} behance
               %li.facebook
-                %a{:href => "#"} facebook
+                %a{:href => "http://www.facebook.com/nmroller.es"} facebook
               %li.googleplus
                 %a{:href => "#"} googleplus
               %li.twitter
