@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root to: 'pages#index'
   get 'contact' => "pages#contact", as: :contact
-  
+  get 'classes' => "pages#classes", as: :classes
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
