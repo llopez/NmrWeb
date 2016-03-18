@@ -10,23 +10,10 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery.1.7.2.min
-// require jquery_ujs
 // require turbolinks
-
-//= require respond.min
-//= require modernizr.custom.17475
-//= require jquery.flexslider
-//= require hoverIntent
-//= require superfish
-//= require mobile-menu
-//= require placeholder
-//= require inview
-//= require bootstrap
-//= require validate
-//= require functions
-//= require fancybox/source/jquery.fancybox.pack
-//= require fancybox/source/helpers/jquery.fancybox-media
-//= require fancy_func
-//= require mapmarker.jquery
-//= require mapmarker_func.jquery
+//= require jquery.min
+//= require jquery.dropotron.min
+//= require skel.min
+//= require skel-viewport.min
+//= require util
+//= require main

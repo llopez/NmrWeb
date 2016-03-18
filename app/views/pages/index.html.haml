@@ -1,94 +1,97 @@
 .row
-  .col-md-12
-    .flexslider
-      %ul.slides
-        %li
-          %img{:alt => "", :src => asset_path("slider/slide-1.jpg")}/
-          %p.flex-caption I will help you to achieve your goal
-        %li
-          %img{:alt => "", :src => asset_path("slider/slide-2.jpg")}/
-          %p.flex-caption Your exercises will be carried out to perfection
-        %li
-          %img{:alt => "", :src => asset_path("slider/slide-3.jpg")}/
-          %p.flex-caption Lose weht in a short time
-        %li
-          %img{:alt => "", :src => asset_path("slider/slide-4.jpg")}/
-          %p.flex-caption The pleasure of outdoor recreation
-        %li
-          %img{:alt => "", :src => asset_path("slider/slide-5.jpg")}/
-          %p.flex-caption Proper training will make you feel better
-    / End slider
-  / End row
-/ End col-md-12
+  .12u
+    / Portfolio
+    %section
+      %header.major
+        %h2 My Portfolio
+      .row
+        .4u{:class => "12u(mobile)"}
+          %section.box
+            %a.image.featured{:href => "#"}
+              = image_tag "pic02.jpg"
+            %header
+              %h3 Ipsum feugiat et dolor
+            %p Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.
+            %footer
+              %a.button.alt{:href => "#"} Find out more
+        .4u{:class => "12u(mobile)"}
+          %section.box
+            %a.image.featured{:href => "#"}
+              = image_tag "pic03.jpg"
+            %header
+              %h3 Sed etiam lorem nulla
+            %p Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.
+            %footer
+              %a.button.alt{:href => "#"} Find out more
+        .4u{:class => "12u(mobile)"}
+          %section.box
+            %a.image.featured{:href => "#"}
+              = image_tag "pic04.jpg"
+            %header
+              %h3 Consequat et tempus
+            %p Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.
+            %footer
+              %a.button.alt{:href => "#"} Find out more
+      .row
+        .4u{:class => "12u(mobile)"}
+          %section.box
+            %a.image.featured{:href => "#"}
+              = image_tag "pic05.jpg"
+            %header
+              %h3 Blandit sed adipiscing
+            %p Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.
+            %footer
+              %a.button.alt{:href => "#"} Find out more
+        .4u{:class => "12u(mobile)"}
+          %section.box
+            %a.image.featured{:href => "#"}
+              = image_tag "pic06.jpg"
+            %header
+              %h3 Etiam nisl consequat
+            %p Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.
+            %footer
+              %a.button.alt{:href => "#"} Find out more
+        .4u{:class => "12u(mobile)"}
+          %section.box
+            %a.image.featured{:href => "#"}
+              = image_tag "pic07.jpg"
+            %header
+              %h3 Dolore nisl feugiat
+            %p Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.
+            %footer
+              %a.button.alt{:href => "#"} Find out more
 .row
-  .col-md-3.col-sm-6
-    .box_calculator
-      %a{:href => "daily-calorie-calculator.html"}
-        %img{:alt => "", :src => asset_path("icon-1.png")}/
-        %h3 Daily Calorie Calculator
-        %p Determine your daily calorie needs in a more precise way
-    / End box-calculator
-  / End col-md-3
-  .col-md-3.col-sm-6
-    .box_calculator
-      %a{:href => "calories-burned-heart-rate.html"}
-        %img{:alt => "", :src => asset_path("icon-2.png")}/
-        %h3 Calorie Burned by heart/rate
-        %p The connection between the heart rate and the metabolism
-    / End box-calculator
-  / End col-md-3
-  .col-md-3.col-sm-6
-    .box_calculator
-      %a{:href => "calories-burned-calculator.html"}
-        %img{:alt => "", :src => asset_path("icon-3.png")}/
-        %h3 Calorie Burned by activities
-        %p Estimate the number of calories burned after exercises
-    / End box-calculator
-  / End col-md-3
-  .col-md-3.col-sm-6
-    .box_calculator
-      %a{:href => "bmi-calculator.html"}
-        %img{:alt => "", :src => asset_path("icon-4.png")}/
-        %h3 Bmi Body mass Calculator
-        %p Measure of body fat based on heht and weight
-    / End box-calculator
-  / End col-md-3
-/ End row
-%h3.title Nosotros
-.row
-  .col-md-6
-    %h3.title-2
-      %span ¿Quienes Somos?
-    %p
-      NM Roller es una escuela dedicada exclusivamente al aprendizaje de patín en línea. Las clases son dictadas por Nicolás Sappia y Matias Escudero.
-    %p
-      Es una actividad divertida que se realiza al aire libre de manera grupal o individual.
-  .col-md-6
-    %h3.title-2
-      %span Objetivo
-    %p
-      Nuestro objetivo es que aprendas a manipular no sólo la técnica, sino también la fluidez al andar.
-    %p
-      Se proponen series de ejercicios que se adecuan al nivel de cada alumno, dándoles así una mayor seguridad.
-    %p
-      Las clases son para todos los niveles, sin límites de edad.
-  .col-md-6
-    %h3.title-2
-      %span Beneficios del patin
-    %p
-      Los beneficios que se obtienen son muchos, entre ellos fortalecer la musculación, adquirir equilibrio, oxigenar el cuerpo, y hasta bajar de peso.
-%h3.title Alumnos
-.row
-  .col-md-6
-    .quote.clearfix
-      %img.img-circle{:alt => "", width: "60px",:src => asset_path("luis-lopez-testimonial.jpg")}/
-      %p
-        Como muchos, mis comienzos en el patin fueron de freeskate, pasaba todos los dias junto a los chicos de los conos y me llamaba mucho la atencion las cosas lindas que haciean.
-        Lo que me llevo a tomar clases de slalom. Me enamore de este deporte y para mi es mi cable a tierra.
-      %em Luis López
-  .col-md-6
-    .quote.clearfix
-      %img.img-circle{:alt => "", :src => asset_path("testimonial-2.jpg")}/
-      %p
-        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.
-      %em Jhon Doe
+  .12u
+    / Blog
+    %section
+      %header.major
+        %h2 The Blog
+      .row
+        .6u{:class => "12u(mobile)"}
+          %section.box
+            %a.image.featured{:href => "#"}
+              = image_tag "pic08.jpg"
+            %header
+              %h3 Magna tempus consequat lorem
+              %p Posted 45 minutes ago
+            %p Lorem ipsum dolor sit amet sit veroeros sed et blandit consequat sed veroeros lorem et blandit  adipiscing feugiat phasellus tempus hendrerit, tortor vitae mattis tempor, sapien sem feugiat sapien, id suscipit magna felis nec elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos lorem ipsum dolor sit amet.
+            %footer
+              %ul.actions
+                %li
+                  %a.button.icon.fa-file-text{:href => "#"} Continue Reading
+                %li
+                  %a.button.alt.icon.fa-comment{:href => "#"} 33 comments
+        .6u{:class => "12u(mobile)"}
+          %section.box
+            %a.image.featured{:href => "#"}
+              = image_tag "pic09.jpg"
+            %header
+              %h3 Aptent veroeros et aliquam
+              %p Posted 45 minutes ago
+            %p Lorem ipsum dolor sit amet sit veroeros sed et blandit consequat sed veroeros lorem et blandit  adipiscing feugiat phasellus tempus hendrerit, tortor vitae mattis tempor, sapien sem feugiat sapien, id suscipit magna felis nec elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos lorem ipsum dolor sit amet.
+            %footer
+              %ul.actions
+                %li
+                  %a.button.icon.fa-file-text{:href => "#"} Continue Reading
+                %li
+                  %a.button.alt.icon.fa-comment{:href => "#"} 33 comments

@@ -8,7 +8,7 @@
     /[if lte IE 8] <script src="assets/js/ie/html5shiv.js"></script>
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => false
     /[if lte IE 8] <link rel="stylesheet" href="assets/css/ie8.css" />
-  %body.homepage
+  %body.no-sidebar
     #page-wrapper
       / Header
       #header-wrapper
@@ -19,7 +19,7 @@
           / Nav
           %nav#nav
             %ul
-              %li.current
+              %li
                 %a{:href => "index.html"} Home
               %li
                 %a{:href => "#"} Dropdown
@@ -49,40 +49,8 @@
                 %a{:href => "left-sidebar.html"} Left Sidebar
               %li
                 %a{:href => "right-sidebar.html"} Right Sidebar
-              %li
+              %li.current
                 %a{:href => "no-sidebar.html"} No Sidebar
-          / Banner
-          %section#banner
-            %header
-              %h2 Howdy. This is Dopetrope.
-              %p A responsive template by HTML5 UP
-          / Intro
-          %section#intro.container
-            .row
-              .4u{:class => "12u(mobile)"}
-                %section.first
-                  %i.icon.featured.fa-cog
-                  %header
-                    %h2 Ipsum consequat
-                  %p Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.
-              .4u{:class => "12u(mobile)"}
-                %section.middle
-                  %i.icon.featured.alt.fa-flash
-                  %header
-                    %h2 Magna etiam dolor
-                  %p Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.
-              .4u{:class => "12u(mobile)"}
-                %section.last
-                  %i.icon.featured.alt2.fa-star
-                  %header
-                    %h2 Tempus adipiscing
-                  %p Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.
-            %footer
-              %ul.actions
-                %li
-                  %a.button.big{:href => "#"} Get Started
-                %li
-                  %a.button.alt.big{:href => "#"} Learn More
       / Main
       #main-wrapper
         .container= yield
@@ -135,7 +103,7 @@
                 %header
                   %h2 What's this all about?
                 %a.image.featured{:href => "#"}
-                  = image_tag "pic10.jpg"
+                  %img{:alt => "", :src => "images/pic10.jpg"}/
                 %p
                   This is
                   %strong Dopetrope
