@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Dopetrope by HTML5 UP
+    %title NMR Escuela de Rollers
     %meta{:charset => "utf-8"}/
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     /[if lte IE 8] <script src="assets/js/ie/html5shiv.js"></script>
@@ -10,143 +10,35 @@
     /[if lte IE 8] <link rel="stylesheet" href="assets/css/ie8.css" />
   %body.homepage
     #page-wrapper
-      / Header
       #header-wrapper
         #header
-          / Logo
           %h1
-            %a{:href => "index.html"} Dopetrope
-          / Nav
+            %a{:href => "index.html"} NMR Escuela de Rollers
           %nav#nav
             %ul
               %li.current
-                %a{:href => "index.html"} Home
+                %a{:href => "/"} Inicio
               %li
-                %a{:href => "#"} Dropdown
+                %a{:href => "#"} Clases
                 %ul
                   %li
-                    %a{:href => "#"} Lorem ipsum dolor
+                    %a{:href => "/clases/individuales"} Individuales
                   %li
-                    %a{:href => "#"} Magna phasellus
+                    %a{:href => "/clases/grupales"} Grupales
                   %li
-                    %a{:href => "#"} Etiam dolore nisl
-                  %li
-                    %a{:href => "#"} Phasellus consequat
-                    %ul
-                      %li
-                        %a{:href => "#"} Magna phasellus
-                      %li
-                        %a{:href => "#"} Etiam dolore nisl
-                      %li
-                        %a{:href => "#"} Veroeros feugiat
-                      %li
-                        %a{:href => "#"} Nisl sed aliquam
-                      %li
-                        %a{:href => "#"} Dolore adipiscing
-                  %li
-                    %a{:href => "#"} Veroeros feugiat
+                    %a{:href => "/precios"} Precios
               %li
-                %a{:href => "left-sidebar.html"} Left Sidebar
+                %a{:href => "/lugares"} Lugares
               %li
-                %a{:href => "right-sidebar.html"} Right Sidebar
+                %a{:href => "/recorridos"} Recorridos
               %li
-                %a{:href => "no-sidebar.html"} No Sidebar
-          / Banner
+                %a{:href => "/guias"} Guias
           %section#banner
             %iframe(src="https://www.youtube.com/embed/TJDhP1gzyb0" frameborder="0" allowfullscreen)
-          / Intro
-          %section#intro.container
-            .row
-              .4u{:class => "12u(mobile)"}
-                %section.first
-                  %i.icon.featured.fa-cog
-                  %header
-                    %h2 Ipsum consequat
-                  %p Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.
-              .4u{:class => "12u(mobile)"}
-                %section.middle
-                  %i.icon.featured.alt.fa-flash
-                  %header
-                    %h2 Magna etiam dolor
-                  %p Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.
-              .4u{:class => "12u(mobile)"}
-                %section.last
-                  %i.icon.featured.alt2.fa-star
-                  %header
-                    %h2 Tempus adipiscing
-                  %p Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.
-            %footer
-              %ul.actions
-                %li
-                  %a.button.big{:href => "#"} Get Started
-                %li
-                  %a.button.alt.big{:href => "#"} Learn More
-      / Main
       #main-wrapper
         .container= yield
-      / Footer
       #footer-wrapper
         %section#footer.container
-          .row
-            .8u{:class => "12u(mobile)"}
-              %section
-                %header
-                  %h2 Blandit nisl adipiscing
-                %ul.dates
-                  %li
-                    %span.date
-                      Jan
-                      %strong 27
-                    %h3
-                      %a{:href => "#"} Lorem dolor sit amet veroeros
-                    %p Ipsum dolor sit amet veroeros consequat blandit ipsum phasellus lorem consequat etiam.
-                  %li
-                    %span.date
-                      Jan
-                      %strong 23
-                    %h3
-                      %a{:href => "#"} Ipsum sed blandit nisl consequat
-                    %p Blandit phasellus lorem ipsum dolor tempor sapien tortor hendrerit adipiscing feugiat lorem.
-                  %li
-                    %span.date
-                      Jan
-                      %strong 15
-                    %h3
-                      %a{:href => "#"} Magna tempus lorem feugiat
-                    %p Dolore consequat sed phasellus lorem sed etiam nullam dolor etiam sed amet sit consequat.
-                  %li
-                    %span.date
-                      Jan
-                      %strong 12
-                    %h3
-                      %a{:href => "#"} Dolore tempus ipsum feugiat nulla
-                    %p Feugiat lorem dolor sed nullam tempus lorem ipsum dolor sit amet nullam consequat.
-                  %li
-                    %span.date
-                      Jan
-                      %strong 10
-                    %h3
-                      %a{:href => "#"} Blandit tempus aliquam?
-                    %p Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet dolore.
-            .4u{:class => "12u(mobile)"}
-              %section
-                %header
-                  %h2 What's this all about?
-                %a.image.featured{:href => "#"}
-                  = image_tag "pic10.jpg"
-                %p
-                  This is
-                  %strong Dopetrope
-                  a free, fully responsive HTML5 site template by
-                  %a{:href => "http://n33.co"} AJ
-                  for
-                  %a{:href => "http://html5up.net/"} HTML5 UP
-                  It's released for free under
-                  the
-                  %a{:href => "http://html5up.net/license/"} Creative Commons Attribution
-                  license so feel free to use it for any personal or commercial project – just don't forget to credit us!
-                %footer
-                  %a.button{:href => "#"} Find out more
           .row
             .4u{:class => "12u(mobile)"}
               %section
@@ -185,48 +77,31 @@
             .4u{:class => "12u(mobile)"}
               %section
                 %header
-                  %h2 Vitae tempor lorem
+                  %h2 Encuentranos en
                 %ul.social
                   %li
-                    %a.icon.fa-facebook{:href => "#"}
+                    %a.icon.fa-facebook{:href => "http://www.facebook.com/nmroller.es", :target => 'blank'}
                       %span.label Facebook
                   %li
-                    %a.icon.fa-twitter{:href => "#"}
-                      %span.label Twitter
-                  %li
-                    %a.icon.fa-dribbble{:href => "#"}
-                      %span.label Dribbble
-                  %li
-                    %a.icon.fa-linkedin{:href => "#"}
-                      %span.label LinkedIn
-                  %li
-                    %a.icon.fa-google-plus{:href => "#"}
-                      %span.label Google+
+                    %a.icon.fa-youtube{:href => "http://www.youtube.com/channel/UC8UJvjvoYy2wnqJhxn0lIdQ", :target => 'blank'}
+                      %span.label YouTube
                 %ul.contact
                   %li
-                    %h3 Address
+                    %h3 Correo
                     %p
-                      Untitled Incorporated
-                      %br/
-                      1234 Somewhere Road Suite
-                      %br/
-                      Nashville, TN 00000-0000
+                      %a{:href => "#"} nmroller@hotmail.com
                   %li
-                    %h3 Mail
-                    %p
-                      %a{:href => "#"} someone@untitled.tld
-                  %li
-                    %h3 Phone
-                    %p (800) 000-0000
+                    %h3 Telefono
+                    %p 11-3621-0500
           .row
             .12u
               / Copyright
               #copyright
                 %ul.links
-                  %li © Untitled. All rights reserved.
+                  %li © NMR. Derechos reservados
                   %li
-                    Design:
-                    %a{:href => "http://html5up.net"} HTML5 UP
+                    Desarrollado por:
+                    %a{:href => "http://www.luigibyte.com.ar"} luigibyte
     / Scripts
     = javascript_include_tag 'application', 'data-turbolinks-track' => false
     /[if lte IE 8] <script src="assets/js/ie/respond.min.js"></script>
