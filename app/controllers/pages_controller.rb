@@ -1,9 +1,10 @@
 class PagesController < ApplicationController
 
   def index
+    @active_menu = "home"
   end
 
-  def page
-    render layout: 'page'
+  def classes
+    @active_menu = "classes"
   end
 end

@@ -3,20 +3,13 @@
     %a{:href => "index.html"} NMR Escuela de Rollers
   %nav#nav
     %ul
-      %li.current
+      %li{class: @active_menu == 'home' ? 'current': ''}
         %a{:href => "/"} Inicio
-      %li
-        %a{:href => "#"} Clases
-        %ul
-          %li
-            %a{:href => "/clases/individuales"} Individuales
-          %li
-            %a{:href => "/clases/grupales"} Grupales
-          %li
-            %a{:href => "/precios"} Precios
-      %li
-        %a{:href => "/lugares"} Lugares
-      %li
-        %a{:href => "/recorridos"} Recorridos
-      %li
-        %a{:href => "/guias"} Guias
+      %li{class: @active_menu == 'classes' ? 'current': ''}
+        %a{:href => classes_path } Clases
+      %li{class: @active_menu == 'places' ? 'current': ''}
+        %a{:href => "#"} Lugares
+      %li{class: @active_menu == 'roads' ? 'current': ''}
+        %a{:href => "#"} Recorridos
+      %li{class: @active_menu == 'guides' ? 'current': ''}
+        %a{:href => "#"} Guias

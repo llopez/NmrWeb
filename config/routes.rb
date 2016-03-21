@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root to: 'pages#index'
-  get 'page' => "pages#page", as: :page
+  get 'clases' => "pages#classes", as: :classes
 end
