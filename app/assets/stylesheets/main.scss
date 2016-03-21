@@ -1076,7 +1076,7 @@
 
 	body {
 		background: #252122;
-		background-image: asset-url("bg02.png");
+		background-image: asset-url("bg.png");
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
 		color: #5d5d5d;
@@ -1695,7 +1695,7 @@
 
 	#main-wrapper {
 		position: relative;
-		background: #f7f7f7 asset-url("bg02.png");
+		background: #f7f7f7 asset-url("bg.png");
 	}
 
 		#main-wrapper:before {
@@ -1704,14 +1704,14 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			background: asset-url("bg01.png");
+			background: asset-url("bg.png");
 			background-size: 100% 100%;
 			z-index: 0;
 			opacity: 0.1;
 		}
 
 		#main-wrapper .major h2 {
-			background: #f7f7f7 asset-url("bg02.png");
+			background: #f7f7f7 asset-url("bg.png");
 		}
 
 	#footer-wrapper {
@@ -1725,7 +1725,7 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			background: asset-url("bg01.png");
+			background: asset-url("bg.png");
 			background-size: 100% 100%;
 			z-index: 0;
 			opacity: 0.5;
@@ -2392,7 +2392,7 @@
 				width: 275px;
 				z-index: 10002;
 				color: #858484;
-				background-image: asset-url("bg02.png");
+				background-image: asset-url("bg.png");
 				box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
 			}
 
