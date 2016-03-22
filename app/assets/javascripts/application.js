@@ -17,3 +17,4 @@
 //= require skel-viewport.min
 //= require util
 //= require main
+//= require googlemaps
