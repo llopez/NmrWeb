@@ -10,8 +10,4 @@ class PagesController < ApplicationController
   def where_are_we
     @active_menu = "where_are_we"
   end
-
-  def contact
-    @active_menu = "contact"
-  end
 end

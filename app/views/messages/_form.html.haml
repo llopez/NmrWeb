@@ -1,0 +1,5 @@
+= form_for @message do |f|
+  %p= f.text_field :name, placeholder: 'Nombre'
+  %p= f.text_field :email, placeholder: 'Correo'
+  %p= f.text_area :body, placeholder: 'Mensaje'
+  %p= f.submit 'Enviar'
