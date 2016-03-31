@@ -22,5 +22,15 @@ module NmrWeb
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    config.action_mailer.smtp_settings = {
+      :address        => 'smtp.sendgrid.net',
+      :port           => '587',
+      :authentication => :plain,
+      :user_name      => "app46806309@heroku.com",
+      :password       => "codeegid9886",
+      :domain         => 'heroku.com',
+      :enable_starttls_auto => true
+    }
   end
 end
