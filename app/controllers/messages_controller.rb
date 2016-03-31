@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
   def create
     @message = Message.new params[:message]
     if @message.valid?
-      # send email
+      UserMailer.contact(@message).deliver_now!
       redirect_to new_message_path, notice: 'Mensaje enviado'
     else
       render :new

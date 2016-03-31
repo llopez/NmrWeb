@@ -27,8 +27,8 @@ module NmrWeb
       :address        => 'smtp.sendgrid.net',
       :port           => '587',
       :authentication => :plain,
-      :user_name      => "app46806309@heroku.com",
-      :password       => "codeegid9886",
+      :user_name      => Rails.application.sendgrid_username,
+      :password       => Rails.application.sendgrid_password,
       :domain         => 'heroku.com',
       :enable_starttls_auto => true
     }
