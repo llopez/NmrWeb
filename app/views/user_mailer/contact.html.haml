@@ -1,2 +1,8 @@
-%p
-  = @message.inspect
+%p Nombre:
+%span= @message.name
+
+%p Correo:
+%span= @message.email
+
+%p Mensaje:
+= simple_format(@message.body)

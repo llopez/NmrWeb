@@ -8,6 +8,6 @@ class UserMailer < ApplicationMailer
   def contact(message)
     @message = message
 
-    mail to: "luigibyte@gmail.com"
+    mail to: Rails.application.secrets.inbox_address
   end
 end
